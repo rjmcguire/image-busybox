@@ -1,10 +1,10 @@
 DOCKER_NAMESPACE =	armbuild/
-NAME =			ocs-distrib-busybox
+NAME =			scw-distrib-busybox
 VERSION =		latest
 VERSION_ALIASES =	
 TITLE =			Busybox
 DESCRIPTION =		Busybox
-SOURCE_URL =		https://github.com/online-labs/image-busybox
+SOURCE_URL =		https://github.com/scaleway/image-busybox
 SHELL =			/bin/sh
 VENDOR_URL =		http://busybox.net
 
@@ -13,8 +13,8 @@ IMAGE_BOOTSCRIPT =	stable
 IMAGE_NAME =		Busybox
 
 
-## Image tools  (https://github.com/online-labs/image-tools)
+## Image tools  (https://github.com/scaleway/image-tools)
 all:	docker-rules.mk
 docker-rules.mk:
-	wget -qO - http://j.mp/image-tools | bash
+	wget -qO - http://j.mp/scw-tools | bash
 -include docker-rules.mk
