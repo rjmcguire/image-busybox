@@ -1,5 +1,4 @@
-DOCKER_NAMESPACE =	armbuild/
-NAME =			scw-distrib-busybox
+NAME =			busybox
 VERSION =		latest
 VERSION_ALIASES =	
 TITLE =			Busybox
